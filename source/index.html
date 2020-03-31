@@ -9,20 +9,19 @@
 
 <body>
   <header class="page-header">
-    <nav class="page-header__navigation">
+    <nav class="page-header__navigation navigation">
+      <a href="index.html" class="navigation-logo">
+        <img class="page-logo" src="https://via.placeholder.com/200x45" alt="логотип страницы">
+      </a>
+      <button class="navigation-button"></button>
       <ul class="navigation-list">
-        <li class="navigation-list__item">
-          <a href="index.html" class="navigation-item__logo">
-            <img class="navigation-item__logo" src="https://via.placeholder.com/200x45" alt="логотип страницы">
-          </a>
-        </li>
-        <li class="navigation-list__item"><a href="index.html">Главная</a></li>
+        <li class="navigation-list__item"><a>Главная</a></li>
         <li class="navigation-list__item"><a href="catalog.html">Каталог Продуктов</a></li>
         <li class="navigation-list__item"><a href="form.html">Подбор программы</a></li>
       </ul>
     </nav>
-    <section class=""> <!-- Не знаю как назвать эту часть кратко -->
-      <h1 class="page-title">Функциональное питание для котов</h1>
+    <section class="promo">
+      <h1 class="promo__title">Функциональное питание для котов</h1>
       <p>Занялся собой? Займись котом!</p>
       <img src="https://via.placeholder.com/230x225" alt="Cat energy pro 500 грамм с курицей">
       <a class="button-select-program" href="#">Подобрать программу</a>
@@ -31,14 +30,14 @@
 
   <main class="page-content">
     <ul class="options-list">
-      <li class="options-item">
-        <h3 class="options-item__title">Похудение</h3>
-        <p class="options-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+      <li class="options-list__item">
+        <h3 class="options-list__title">Похудение</h3>
+        <p class="options-list__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a href="#" class="options-item__button">Каталог slim</a>
       </li>
-      <li class="options-item">
-        <h3 class="options-item__title">Набор массы</h3>
-        <p class="options-item__description">Заработать авторитет среди дворовых котов и даже собак?
+      <li class="options-list__item">
+        <h3 class="options-list__title">Набор массы</h3>
+        <p class="options-list__description">Заработать авторитет среди дворовых котов и даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a href="#" class="options-item__button">Каталог pro</a>
       </li>
@@ -70,17 +69,17 @@
       <h3 class="contacts__title">Связаться с нами можете:</h3>
       <ul class="contacts-list">
         <li class="contacts-list__item">
-          <a href="#" class="contacts-list__vk"><img src="http://via.placeholder.com/30x15" alt="Cсылка на Вконтакте"></a>
+          <a href="#" class="contacts-list__link"><img src="http://via.placeholder.com/30x15" alt="Cсылка на Вконтакте"></a>
         </li>
         <li class="contacts-list__item">
-          <a href="#" class="contacts-list__instagram"><img src="http://via.placeholder.com/20x20" alt="Cсылка на Instagram"></a>
+          <a href="#" class="contacts-list__link"><img src="http://via.placeholder.com/20x20" alt="Cсылка на Instagram"></a>
         </li>
         <li class="contacts-list__item">
-          <a href="#" class="contacts-list__facebook"><img src="http://via.placeholder.com/15x25" alt="Cсылка на facebook"></a>
+          <a href="#" class="contacts-list__link"><img src="http://via.placeholder.com/15x25" alt="Cсылка на facebook"></a>
         </li>
       </ul>
     </div>
-    <div> <!-- Не знаю как назвать эту часть кратко. -->
+    <div class="page-footer__copyright">
       <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       <a href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/30x40" alt="Логотип HTML академии"></a>
     </div>

@@ -33,3 +33,23 @@
   width: 0;
   visibility: hidden;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding: 0;
+    margin: 0;
+    width: 124px;
+    height: 28px;
+    margin-top: 3px;
+    margin-left: 16px;
+  }
+
+  .contacts::before,
+  .contacts::after {
+    display: none;
+  }
+
+  .contacts__title {
+    display: none;
+  }
+}

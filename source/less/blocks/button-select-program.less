@@ -1,7 +1,7 @@
 .button-select-program {
-  display: block;
+  display: flex;
   width: 280px;
-  height: 30px;
+  height: 40px;
   background-color: #69b738;
   color: #ffffff;
   text-decoration: none;
@@ -9,6 +9,23 @@
   text-align: center;
   padding: 0;
   margin: 0 auto;
-  padding-top: 8px;
+  justify-content: center;
+  align-items: center;
   margin-top: 3px;
+}
+
+@media (min-width: @tablet-width) {
+  .button-select-program {
+    position: absolute;
+    height: 52px;
+    width: 245px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 242px;
+    margin-left: 119px;
+  }
 }

@@ -27,3 +27,29 @@
   align-items: center;
   margin-top: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .navigation-list {
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    width: 440px;
+    height: 58px;
+  }
+
+  .navigation-list__item {
+    height: auto;
+    width: auto;
+    border: none;
+    font-size: 18px;
+  }
+
+  .navigation-list__link {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+}

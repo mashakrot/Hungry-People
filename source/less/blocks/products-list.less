@@ -16,19 +16,21 @@
 @media (min-width: @tablet-width) {
   .products-list {
     padding: 0;
-    margin: 0;
-    height: 2284px;
+    margin: 0 auto;
     display: flex;
+    width: 768px;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 10px;
   }
+}
 
-  .products-list__item {
-    width: 323px;
-    height: 431px;
-    border: none;
-    margin-top: 140px;
-    background-color: #f2f2f2;
+@media (min-width: @desktop-width) {
+  .products-list {
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-around;
   }
 }

@@ -1,6 +1,10 @@
 .page-content {
   /*min-height: 3218px;*/
-  width: 320px;
+  /*width: 320px;*/
+}
+
+.page-content__wrapper {
+  margin: 0 auto;
 }
 
 .page-content__title {
@@ -26,11 +30,27 @@
     font-weight: 400;
     width: auto;
     margin-top: 43px;
+    margin-left: 29px;
   }
 
   .page-content__wrapper {
-    width: 708px;
-    height: auto;
+    width: 766px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-content {
+    /*eight: 1883px;*/
+  }
+
+  .page-content__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .page-content__title {
+    margin: 0;
+    margin-top: 60px;
   }
 }

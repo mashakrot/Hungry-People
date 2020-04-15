@@ -1,6 +1,6 @@
 .page-header {
   /*min-height: 546px;*/
-  width: 320px;
+  /*width: 320px;*/
 }
 
 @media (min-width: @tablet-width) {
@@ -16,5 +16,26 @@
     padding-top: 24px;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .page-header__index {
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 720px 696px;
+    background-position: right top;
+  }
+
+  .page-header__navigation-wrapper {
+    width: 1220px;
+    height: 59px;
+    margin: 0 auto;
+    padding-top: 56px;
   }
 }

@@ -1,7 +1,11 @@
 .page-footer {
-  width: 320px;
-  height: 236px;
+  width: 100%;
+  /*height: 236px;*/
   background-color: #f2f2f2;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
 }
 
 .page-footer__logo {
@@ -50,12 +54,11 @@
 @media (min-width: @tablet-width) {
   .page-footer {
     width: 100%;
-    height: 150px;
   }
 
   .page-footer__wrapper {
     width: 722px;
-    height: 100%;
+    height: 150px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -92,5 +95,20 @@
   .page-footer__copyright-icon {
     padding: 0;
     margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    width: 1233px;
+    margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    margin-left: 6px;
+  }
+
+  .page-footer__copyright {
+    margin-top: 3px;
   }
 }

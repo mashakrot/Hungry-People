@@ -1,6 +1,7 @@
 .stats {
+  margin: 0 auto;
   width: 320px;
-  height: 424px;
+  /*height: 424px;*/
   margin-top: 22px;
 }
 
@@ -15,15 +16,26 @@
 @media (min-width: @tablet-width) {
   .stats {
     width: 708px;
-    height: 750px;
+    /*height: 750px;*/
     margin: 0 auto;
     margin-top: 30px;
   }
 
   .stats__title {
-    width: auto;
-    height: auto;
+    width: 708px;
     font-size: 60px;
     font-weight: 400;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .stats {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .stats__title {
+    width: 1220px;
+    margin-top: 58px;
   }
 }

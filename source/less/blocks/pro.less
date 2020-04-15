@@ -15,14 +15,25 @@
   .pro__description {
     width: 340px;
   }
-}
 
-@media (min-width: @tablet-width) {
   .pro__title::before {
     width: 269px;
     height: 112px;
     margin: 0;
     margin-left: 359px;
     margin-top: 67px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pro__description {
+    width: 465px;
+  }
+
+  .pro__title::before {
+    width: 134px;
+    height: 56px;
+    margin-top: 1px;
+    margin-left: -181px;
   }
 }

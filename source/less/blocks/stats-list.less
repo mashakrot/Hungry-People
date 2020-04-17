@@ -28,50 +28,157 @@
   margin-top: 1px;
 }
 
-.stats-list__item1::before {
+.stats-list__item--leaf::before {
   content: "";
   position: absolute;
   width: 60px;
   height: 60px;
   background-image: url("../img/advantage-leaf@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  margin-left: -75px;
-  margin-top: 6px;
+  background-position: 5px 5px;
 }
 
-.stats-list__item2::before {
+.stats-list__item--powder::before {
   content: "";
   position: absolute;
   width: 60px;
   height: 60px;
   background-image: url("../img/advantage-powder@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  margin-left: -75px;
-  margin-top: 5px;
+  background-position: 5px 4px;
 }
 
-.stats-list__item3::before {
+.stats-list__item--dining::before {
   content: "";
   position: absolute;
   width: 60px;
   height: 60px;
   background-image: url("../img/advantage-dining@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  margin-left: -75px;
-  margin-top: 6px;
+  background-position: 4px 5px;
 }
 
-.stats-list__item4::before {
+.stats-list__item--clock::before {
   content: "";
   position: absolute;
   width: 60px;
   height: 60px;
   background-image: url("../img/advantage-clock@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  margin-left: -75px;
-  margin-top: 6px;
+  background-position: 5px 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .stats-list {
+    width: 100%;
+    /*height: 632px;*/
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+
+  .stats-list__text {
+    width: 250px;
+    padding: 0;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 111px;
+    margin-bottom: 104px;
+    line-height: 24px;
+  }
+
+  .stats-list__item {
+    width: 324px;
+    /*height: 287px;*/
+    margin: 0;
+    padding: 0;
+    margin-top: 31px;
+  }
+
+  .stats-list__item::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .stats-list__item--leaf::before {
+    background-position: 15px 16px;
+  }
+
+  .stats-list__item--leaf::after {
+    content: "1";
+    font-size: 281px;
+    font-family: "Oswald", "Arial", sans-serif;
+    width: 70px;
+    height: 130px;
+    position: absolute;
+    color: #f2f2f2;
+    z-index: -1;
+    margin-top: -195px;
+    margin-left: 118px;
+  }
+
+  .stats-list__item--powder::before {
+    background-position: 15px 16px;
+  }
+
+  .stats-list__item--powder::after {
+    content: "2";
+    font-size: 281px;
+    font-family: "Oswald", "Arial", sans-serif;
+    width: 70px;
+    height: 130px;
+    position: absolute;
+    color: #f2f2f2;
+    z-index: -1;
+    margin-top: -195px;
+    margin-left: 111px;
+  }
+
+  .stats-list__item--dining::before {
+    background-position: 15px 15px;
+  }
+
+  .stats-list__item--dining::after {
+    content: "3";
+    font-size: 281px;
+    font-family: "Oswald", "Arial", sans-serif;
+    width: 70px;
+    height: 130px;
+    position: absolute;
+    color: #f2f2f2;
+    z-index: -1;
+    margin-top: -195px;
+    margin-left: 113px;
+  }
+
+  .stats-list__item--clock::before {
+    background-position: 15px 16px;
+  }
+
+  .stats-list__item--clock::after {
+    content: "4";
+    font-size: 281px;
+    font-family: "Oswald", "Arial", sans-serif;
+    width: 70px;
+    height: 130px;
+    position: absolute;
+    color: #f2f2f2;
+    z-index: -1;
+    margin-top: -195px;
+    margin-left: 113px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .stats-list__item {
+    width: 245px;
+  }
 }

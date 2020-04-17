@@ -12,3 +12,25 @@
   border-left: 1px solid #ededed;
   border-right: 1px solid #ededed;
 }
+
+@media (min-width: @tablet-width) {
+  .products-list {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    width: 708px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products-list {
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

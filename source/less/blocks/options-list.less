@@ -10,7 +10,7 @@
 
 .options-list__item {
   width: 280px;
-  height: 266px;
+  /*height: 266px;*/
   margin: 0 auto;
   margin-top: 21px;
   padding: 0;
@@ -74,6 +74,7 @@
   font-size: 16px;
   margin-left: 19px;
   margin-top: 35px;
+  margin-bottom: 17px;
 }
 
 .options-list__button::after {
@@ -89,18 +90,30 @@
   margin-left: 14px;
 }
 
+.options-list__button:hover::after {
+  width: 33px;
+  background-image: url("../../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+}
+
+.options-list__button:active {
+  opacity: 0.4;
+}
+
+
 @media (min-width: @tablet-width) {
   .options-list {
     margin: 0 auto;
-    height: 774px;
-    width: 768px;
-    margin-top: 15px;
+    /*height: 774px;*/
+    width: 708px;
+    margin-top: -15px;
   }
 
   .options-list__item {
     width: 708px;
-    height: 372px;
+    /*height: 372px;*/
     margin: 0 auto;
+    margin-top: 30px;
   }
 
   .options-list__item::before {
@@ -119,7 +132,6 @@
 
   .options-list__description {
     width: 374px;
-    height: auto;
     font-size: 16px;
     margin-left: 52px;
     margin-top: 16px;
@@ -131,9 +143,11 @@
   }
 
   .options-list__button {
+    width: 170px;
     font-size: 20px;
     margin-left: 52px;
     margin-top: 51px;
+    margin-bottom: 57px;
   }
 
   .options-list__button::after {
@@ -144,8 +158,8 @@
 
 @media (min-width: @desktop-width) {
   .options-list {
-    width: 1305px;
-    height: 372px;
+    width: 1220px;
+    /*height: 372px;*/
     margin: 0 auto;
     flex-direction: row;
     margin-top: 268px;
@@ -154,6 +168,7 @@
   .options-list__item {
     width: 570px;
     height: 372px;
+    margin: 0;
   }
 
   .options-list__item::before {

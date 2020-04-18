@@ -1,15 +1,16 @@
 .navigation-list {
   width: 320px;
-  height: 181px;
+  height: 197px;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  visibility: hidden;
+  display: none;
+  border: 1px solid #e6e6e6;
 }
 
 .navigation-list__item {
   width: 320px;
-  height: 46px;
+  height: 65px;
   border-bottom: 1px solid #e6e6e6;
   font-size: 20px;
   text-transform: uppercase;
@@ -25,11 +26,12 @@
 .navigation-list__link {
   display: block;
   width: 320px;
-  height: 46px;
+  height: 65px;
   text-decoration: none;
   color: #000000;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -41,6 +43,7 @@
     background-color: transparent;
     width: 440px;
     height: 58px;
+    border: none;
   }
 
   .navigation-list__item {
@@ -55,6 +58,11 @@
     height: auto;
     padding: 0;
     margin: 0;
+  }
+
+  .navigation-list__link--active {
+    width: 100%;
+    border-bottom: 2px solid #68b738;
   }
 }
 
@@ -74,5 +82,9 @@
 
   .navigation-list__link-index {
     color: #ffffff;
+  }
+
+  .navigation-list__link-index--active {
+    border-bottom-color: #ffffff;
   }
 }

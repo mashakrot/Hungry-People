@@ -31,7 +31,7 @@
     <div class="page-content__wrapper">
     <h1 class="page-content__title">Каталог продукции</h1>
     <div class="products-list">
-      <div class="product-card__wrapper">
+      <div class="products-list__product-card-wrapper">
       <article class="product-card">
           <a class="product-card__image" href="#">
             <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144"  alt="Cat energy pro 500 грамм с курицей">
@@ -58,7 +58,7 @@
         <a class="button-order" href="#">Заказать</a>
       </article>
       </div>
-      <div class="product-card__wrapper">
+      <div class="products-list__product-card-wrapper">
       <article class="product-card">
           <a class="product-card__image" href="#">
             <img src="img/chicken-big-mobile@1x.jpg"  width="140" height="144" alt="Cat energy pro 1000 грамм с курицей">
@@ -85,7 +85,7 @@
         <a class="button-order" href="#">Заказать</a>
       </article>
       </div>
-      <div class="product-card__wrapper">
+      <div class="products-list__product-card-wrapper">
       <article class="product-card">
           <a class="product-card__image" href="#">
             <img src="img/fish-small-mobile@1x.jpg"  width="140" height="144" alt="Cat energy pro 500 грамм с рыбой">
@@ -112,7 +112,7 @@
         <a class="button-order" href="#">Заказать</a>
       </article>
       </div>
-      <div class="product-card__wrapper">
+      <div class="products-list__product-card-wrapper">
       <article class="product-card">
           <a class="product-card__image" href="#">
             <img src="img/fish-big-mobile@1x.jpg"  width="140" height="144" alt="Cat energy pro 1000 грамм с рыбой">
@@ -139,7 +139,7 @@
         <a class="button-order" href="#">Заказать</a>
       </article>
       </div>
-      <div class="product-card__wrapper">
+      <div class="products-list__product-card-wrapper">
       <article class="product-card">
           <a class="product-card__image" href="#">
             <img src="img/buckwheat-small-mobile@1x.jpg"  width="140" height="144" alt="Cat energy slim 500 грамм с гречкой">
@@ -166,7 +166,7 @@
         <a class="button-order" href="#">Заказать</a>
       </article>
     </div>
-    <div class="product-card__wrapper">
+    <div class="products-list__product-card-wrapper">
         <article class="product-card">
           <a class="product-card__image" href="#">
             <img src="img/buckwheat-big-mobile@1x.jpg"  width="140" height="144" alt="Cat energy slim 1000 грамм с гречкой">
@@ -193,7 +193,7 @@
         <a class="button-order" href="#">Заказать</a>
       </article>
       </div>
-      <div class="product-card__wrapper">
+      <div class="products-list__product-card-wrapper">
       <article class="product-card">
           <a class="product-card__image" href="#">
             <img src="img/rice-small-mobile@1x.jpg"  width="140" height="144" alt="Cat energy slim 500 грамм с рисом">
@@ -220,7 +220,7 @@
         <a class="button-order" href="#">Заказать</a>
       </article>
       </div>
-      <div class="product-card__wrapper">
+      <div class="products-list__product-card-wrapper">
       <article class="more-products">
         <h3 class="more-products__header">Показать еше 100500 товаров</h3>
         <p class="more-products__text">На самом деле вкусов гораздо больше!</p>
@@ -258,21 +258,7 @@
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.navigation');
-    var navButton = document.querySelector('.navigation-button');
-
-    navMain.classList.remove('navigation--nojs');
-    navButton.addEventListener('click', function() {
-      if (navMain.classList.contains('navigation--closed')) {
-        navMain.classList.remove('navigation--closed');
-        navMain.classList.add('navigation--opened');
-      } else {
-        navMain.classList.add('navigation--closed');
-        navMain.classList.remove('navigation--opened');
-      }
-    });
-  </script>
+  <script src="js/mobile-nav.js"></script>
 
 </body>
 

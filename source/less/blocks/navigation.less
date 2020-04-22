@@ -9,7 +9,7 @@
 .navigation--opened .navigation-button {
   width: 18px;
   height: 18px;
-  margin-right: 22px;
+  margin-right: 23px;
   margin-top: 23px;
   background-image: url("../img/icon-close.svg");
   background-position: 0 0;
@@ -41,14 +41,18 @@
 
 @media (min-width: @tablet-width) {
   .navigation {
-    height: 82px;
+    /*height: 82px;*/
     width: 768px;
     background-color: transparent;
     border: none;
   }
 
+  .navigation--opened .navigation-list {
+    display: flex;
+  }
+
   .navigation__wrapper {
-    height: 58px;
+    /*height: 58px;*/
     width: 173px;
     margin: 0;
   }

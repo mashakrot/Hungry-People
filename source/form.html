@@ -14,7 +14,11 @@
       <div class="page-header__navigation-wrapper">
         <div class="navigation__wrapper">
           <a href="index.html" class="navigation-logo">
-            <img class="navigation-logo__image" width="191" height="38" src="img/logo-mobile.svg" alt="логотип страницы">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="navigation-logo__image" width="191" height="38" src="img/logo-mobile.svg" alt="логотип страницы">
+            </picture>
           </a>
           <button class="navigation-button"></button>
         </div>

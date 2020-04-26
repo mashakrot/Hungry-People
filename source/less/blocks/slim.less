@@ -1,0 +1,31 @@
+.slim__title::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 49px;
+  margin: auto;
+  margin-left: -60px;
+  margin-top: -8px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .slim__title::before {
+    width: 140px;
+    height: 194px;
+    margin-left: 423px;
+    margin-top: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slim__title::before {
+    width: 70px;
+    height: 97px;
+    margin-top: -27px;
+    margin-left: -147px;
+  }
+}
+

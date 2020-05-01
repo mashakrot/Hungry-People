@@ -11,11 +11,11 @@
 </head>
 
 <body class="body">
-  <!--
+
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
-  -->
+
   <header class="page-header">
     <nav class="page-header__navigation navigation navigation--closed">
       <div class="page-header__navigation-wrapper">
@@ -295,12 +295,12 @@
       </article>
       </div>
     </div>
-    <div>
-      <h2>Дополнительные товары</h2>
-      <ul>
-        <li>
-          <h3>Сахарозаменитель</h3>
-          <table>
+    <div class="extra-products">
+      <h2 class="extra-products__title">Дополнительные товары</h2>
+      <ul class="extra-products-list">
+        <li class="extra-products-list__item">
+          <h3 class="extra-products-list__title">Сахарозаменитель</h3>
+          <table class="extra-products-list__table">
             <tr>
               <td>1 упаковка (100 г)</td>
               <td>200 Р.</td>
@@ -308,9 +308,9 @@
           </table>
           <a class="button-order" href="#">Заказать</a>
         </li>
-        <li>
-          <h3>Питьевая вода</h3>
-          <table>
+        <li class="extra-products-list__item">
+          <h3 class="extra-products-list__title">Питьевая вода</h3>
+          <table class="extra-products-list__table">
             <tr>
               <td>5 литров</td>
               <td>50 Р.</td>
@@ -318,9 +318,9 @@
           </table>
           <a class="button-order" href="#">Заказать</a>
         </li>
-        <li>
-          <h3>Молоко</h3>
-          <table>
+        <li class="extra-products-list__item">
+          <h3 class="extra-products-list__title">Молоко</h3>
+          <table class="extra-products-list__table">
             <tr>
               <td>1 литр</td>
               <td>100 Р.</td>
@@ -328,9 +328,9 @@
           </table>
           <a class="button-order" href="#">Заказать</a>
         </li>
-        <li>
-          <h3>Витамины</h3>
-          <table>
+        <li class="extra-products-list__item">
+          <h3 class="extra-products-list__title">Витамины</h3>
+          <table class="extra-products-list__table">
             <tr>
               <td>1 упаковка (30 г)</td>
               <td>300 Р.</td>
@@ -340,17 +340,17 @@
         </li>
       </ul>
     </div>
-    <div>
-      <p>Закажите все и получите чехол для кота в подарок!</p>
+    <div class="sale">
+      <p class="sale__text">Закажите все и получите чехол для кота в подарок!</p>
     </div>
-    <div>
-      <section>
-        <p>приглашаем к сотрудничеству дилеров!</p>
-        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <div class="address-map">
+      <section class="our-address">
+        <p class="our-address__invitation">приглашаем к сотрудничеству дилеров!</p>
+        <p class="our-address__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </section>
-      <section>
-        <img src="img/bg-map-mobile@1x.png" alt="Карта с местонахождением нашего офиса">
-        <iframe style="display: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5942320458557!2d30.32108402186735!3d59.938875024914466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slt!4v1572393932881!5m2!1sru!2slt" width="940" height="447" allowfullscreen=""></iframe>
+      <section class="map">
+        <img class="map__image" src="img/bg-map-mobile@1x.png" alt="Карта с местонахождением нашего офиса">
+        <iframe class="map__iframe" style="display: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5942320458557!2d30.32108402186735!3d59.938875024914466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slt!4v1572393932881!5m2!1sru!2slt" width="940" height="447" allowfullscreen=""></iframe>
       </section>
     </div>
   </div>

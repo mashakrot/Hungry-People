@@ -1,0 +1,50 @@
+.program-selection {
+  padding: 0;
+  margin: 0 auto;
+  width: 318px;
+  border: 1px solid #ededed;
+  padding-bottom: 23px;
+}
+
+.program-selection__list {
+  width: 280px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 4px;
+}
+
+.program-selection__item {
+  color: #222222;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 18px;
+  margin-left: 46px;
+  cursor: pointer;
+}
+
+.program-selection___item label {
+  cursor: pointer;
+}
+
+.program-selection__item input + label::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cecece;
+  border-radius: 50%;
+  left: 20px;
+  margin-top: -2px;
+}
+
+.program-selection__item input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #68b738;
+  border-radius: 50%;
+  left: 29px;
+  margin-top: 7px;
+}

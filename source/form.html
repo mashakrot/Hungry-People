@@ -38,8 +38,8 @@
     </nav>
   </header>
 
-  <main class="page-content">
-    <h1 class="page-content__title">Подбор программы</h1>
+  <main class="page-content-form">
+    <h1 class="page-content__title page-content__title--form">Подбор программы</h1>
     <div class="order-form">
       <p class="order-form__text">Заполните анкету и мы подберем <br>
       программу питания для вашего кота</p>
@@ -47,31 +47,31 @@
         <fieldset class="cats-information">
           <ul class="cats-information__list">
             <li class="cats-information__item">
-              <label for="cat-name">имя:*</label>
-              <input id="cat-name" name="name" type="text" value="Барсик">
+              <label class="cats-information__label" for="cat-name">имя:*</label>
+              <input class="cats-information__input cats-information__input--name" id="cat-name" name="name" type="text" value="Барсик">
             </li>
             <li class="cats-information__item">
-              <label for="cat-weight">Вес (кг):*</label>
-              <input id="cat-weight" name="weight" type="text" value="7">
+              <label class="cats-information__label" for="cat-weight">Вес (кг):*</label>
+              <input class="cats-information__input cats-information__input--weight" id="cat-weight" name="weight" type="text" value="7">
             </li>
             <li class="cats-information__item">
-              <label for="cat-age">Возраст (лет):</label>
-              <input id="cat-age" name="age" type="text" value="7">
+              <label class="cats-information__label" for="cat-age">Возраст (лет):</label>
+              <input class="cats-information__input cats-information__input--age" id="cat-age" name="age" type="text" value="7">
             </li>
           </ul>
         </fieldset>
         <fieldset class="program-selection">
           <ul class="program-selection__list">
             <li class="program-selection__item">
-              <input name="options" id="radio-slim" type="radio" value="Похудение">
+              <input class="visually-hidden" name="options" id="radio-slim" type="radio" value="Похудение">
               <label for="radio-slim">Похудение</label>
             </li>
             <li class="program-selection__item">
-              <input name="options" id="radio-pro" type="radio" value="Набор массы">
+              <input class="visually-hidden" name="options" id="radio-pro" type="radio" value="Набор массы">
               <label for="radio-pro">Набор массы</label>
             </li>
             <li class="program-selection__item">
-              <input name="options" id="dont-know" type="radio" value="Не знаю (нужен ваш совет)">
+              <input class="visually-hidden" name="options" id="dont-know" type="radio" value="Не знаю (нужен ваш совет)">
               <label for="dont-know">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
@@ -80,12 +80,14 @@
           <legend class="contact-details__title">Контактные данные (владельца кота)</legend>
           <ul class="contact-details__list">
             <li class="contact-details__item">
-              <label for="owner-email">E-mail:*</label>
-              <input id="owner-email" name="email" type="email" value="kuklachev@gmail.com">
+              <label class="contact-details__label" for="owner-email">E-mail:*</label>
+              <input class="contact-details__input contact-details__input--email" id="owner-email" name="email" type="email" value="kuklachev@gmail.com">
+              <svg class="contact-details__icon-email" width="17" height="13"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
             </li>
             <li class="contact-details__item">
-              <label for="number">Телефон:*</label>
-              <input id="number" name="phone-number" type="tel" value="8 (960) 900-60-90">
+              <label class="contact-details__label" for="number">Телефон:*</label>
+              <input class="contact-details__input contact-details__input--number" id="number" name="phone-number" type="tel" value="8 (960) 900-60-90">
+              <svg class="contact-details__icon-phone" width="20" height="20"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
             </li>
           </ul>
         </fieldset>
@@ -97,19 +99,19 @@
           <legend class="extra__title">Дополнительно</legend>
           <ul class="extra__list">
             <li class="extra__item">
-              <input id="sweetener" name="extra-sweetener" type="checkbox" checked>
+              <input class="visually-hidden" id="sweetener" name="extra-sweetener" type="checkbox" checked>
               <label for="sweetener">Сахарозаменитель</label>
             </li>
             <li class="extra__item">
-              <input id="water" name="extra-water" type="checkbox">
+              <input class="visually-hidden" id="water" name="extra-water" type="checkbox">
               <label for="water">Питьевая вода</label>
             </li>
             <li class="extra__item">
-              <input id="milk" name="extra-milk" type="checkbox">
+              <input class="visually-hidden" id="milk" name="extra-milk" type="checkbox">
               <label for="milk">Молоко</label>
             </li>
             <li class="extra__item">
-              <input id="vitamins" name="extra-vitamins" type="checkbox">
+              <input class="visually-hidden" id="vitamins" name="extra-vitamins" type="checkbox">
               <label for="vitamins">Витамины</label>
             </li>
           </ul>
@@ -120,11 +122,15 @@
     </div>
     <div class="address-map">
       <section class="our-address">
-        <p class="our-address__invitation">приглашаем к сотрудничеству дилеров!</p>
-        <p class="our-address__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="our-address__wrapper">
+          <p class="our-address__invitation">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
+          <p class="our-address__address">ул. Большая Конюшенная, д. 19/8 <span class="our-address__city">Санкт-Петербург</span></p>
+        </div>
       </section>
       <section class="map">
-        <img class="map__image" src="img/bg-map-mobile@1x.png" alt="Карта с местонахождением нашего офиса">
+        <div class="map__image-wrapper">
+          <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта с местонахождением нашего офиса">
+        </div>
         <iframe class="map__iframe" style="display: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5942320458557!2d30.32108402186735!3d59.938875024914466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slt!4v1572393932881!5m2!1sru!2slt" width="940" height="447" allowfullscreen=""></iframe>
       </section>
     </div>

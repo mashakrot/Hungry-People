@@ -19,3 +19,60 @@
   text-align: center;
   margin-top: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .order-form {
+    width: 630px;
+    margin: 0 auto;
+  }
+
+  .order-form__text {
+    font-size: 20px;
+    width: 630px;
+    text-align: left;
+    margin-top: 40px;
+    line-height: 30px;
+  }
+
+  .order-form__wrapper {
+    display: flex;
+  }
+
+  .order-form__footnote {
+    width: 300px;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 83px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-form {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .order-form__text {
+    width: 1220px;
+    margin: 0;
+    margin-top: 41px;
+  }
+
+  .order-form__information-wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .order-form__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .order-form__footnote {
+    padding-top: 7px;
+    padding-left: 21px;
+  }
+}

@@ -8,8 +8,34 @@
 .map__image {
   padding: 0;
   margin: 0 auto;
+  width: 320px;
+  height: 400px;
 }
 
 .map__image-wrapper {
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    margin-top: -4px;
+  }
+
+  .map__image {
+    width: 767px;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__image-wrapper {
+    width: 1440px;
+    height: 400px;
+  }
+
+  .map__image {
+    width: 1440px;
+    height: 400px;
+    margin-top: 3px;
+  }
 }

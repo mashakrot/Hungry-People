@@ -17,7 +17,7 @@
   font-family: "Arial", sans-serif;
   text-align: center;
   color: #ffffff;
-  padding-top: 187px;
+  padding-top: 186px;
 }
 
 .sale__text::before {
@@ -26,6 +26,58 @@
   background-image: url("../../img/icon-gift.svg");
   width: 56px;
   height: 60px;
-  margin-left: 30px;
-  margin-top: -122px;
+  margin-left: 22px;
+  margin-top: -121px;
+}
+
+@media (min-width: @tablet-width) {
+  .sale {
+    width: 708px;
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin: 0 auto;
+    margin-top: 69px;
+    margin-bottom: 76px;
+  }
+
+  .sale__text {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding-left: 423px;
+    padding-top: 71px;
+  }
+
+  .sale__text::before {
+    margin-left: -333px;
+    margin-top: -6px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sale {
+    width: 245px;
+    height: 289px;
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-top: 71px;
+  }
+
+  .sale__text {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    margin-top: 186px;
+  }
+
+  .sale__text::before {
+    margin: 0;
+    margin-top: -121px;
+    margin-left: 24px;
+  }
 }

@@ -12,7 +12,7 @@
 .our-address__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding-bottom: 11px;
+  padding-bottom: 27px;
   display: flex;
   justify-content: space-between;
 }
@@ -20,7 +20,6 @@
 .our-address__invitation {
   margin: 0;
   padding: 0;
-  width: 140px;
   font-size: 16px;
   text-transform: uppercase;
   color: #111111;
@@ -33,6 +32,89 @@
   font-size: 14px;
   font-family: "Arial", sans-serif;
   color: #444444;
+  margin: 0;
   margin-top: 28px;
   line-height: 20px;
+}
+
+.our-address__city {
+  width: 140px;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  margin: 0;
+  margin-top: 1px;
+}
+
+@media (min-width: @tablet-width) {
+  .our-address {
+    margin-top: 72px;
+  }
+
+  .our-address--white {
+    margin: 0;
+  }
+
+  .our-address__wrapper {
+    width: 625px;
+    margin: 0 auto;
+    padding-bottom: 41px;
+  }
+
+  .our-address__invitation {
+    font-size: 20px;
+    margin-top: 64px;
+    line-height: 25px;
+  }
+
+  .our-address__address {
+    width: 155px;
+    font-size: 16px;
+    text-align: right;
+    line-height: 20px;
+    margin-top: 62px;
+  }
+
+  .our-address__address-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .our-address__city {
+    width: 155px;
+    font-size: 16px;
+    text-align: right;
+    line-height: 61px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .our-address {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    background-color: #ffffff;
+    margin-top: 98px;
+    margin-left: 110px;
+  }
+
+  .our-address__wrapper {
+    width: 418px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .our-address__invitation {
+    margin-top: 65px;
+  }
+
+  .our-address__address {
+    text-align: left;
+    margin-top: 63px;
+    margin-right: 13px;
+  }
+
+  .our-address__city {
+    text-align: left;
+  }
 }

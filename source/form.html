@@ -38,21 +38,23 @@
     </nav>
   </header>
 
-  <main class="page-content-form">
+  <main class="page-content">
+    <div class="page-content__wrapper">
     <h1 class="page-content__title page-content__title--form">Подбор программы</h1>
     <div class="order-form">
       <p class="order-form__text">Заполните анкету и мы подберем <br>
       программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="order-form__information-wrapper">
         <fieldset class="cats-information">
           <ul class="cats-information__list">
             <li class="cats-information__item">
               <label class="cats-information__label" for="cat-name">имя:*</label>
-              <input class="cats-information__input cats-information__input--name" id="cat-name" name="name" type="text" value="Барсик">
+              <input class="cats-information__input cats-information__input--name" id="cat-name" name="name" type="text" value="Барсик" required>
             </li>
             <li class="cats-information__item">
               <label class="cats-information__label" for="cat-weight">Вес (кг):*</label>
-              <input class="cats-information__input cats-information__input--weight" id="cat-weight" name="weight" type="text" value="7">
+              <input class="cats-information__input cats-information__input--weight" id="cat-weight" name="weight" type="text" value="7" required>
             </li>
             <li class="cats-information__item">
               <label class="cats-information__label" for="cat-age">Возраст (лет):</label>
@@ -76,17 +78,18 @@
             </li>
           </ul>
         </fieldset>
+        </div>
         <fieldset class="contact-details">
           <legend class="contact-details__title">Контактные данные (владельца кота)</legend>
           <ul class="contact-details__list">
             <li class="contact-details__item">
               <label class="contact-details__label" for="owner-email">E-mail:*</label>
-              <input class="contact-details__input contact-details__input--email" id="owner-email" name="email" type="email" value="kuklachev@gmail.com">
+              <input class="contact-details__input contact-details__input--email" id="owner-email" name="email" type="email" value="kuklachev@gmail.com" required>
               <svg class="contact-details__icon-email" width="17" height="13"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
             </li>
             <li class="contact-details__item">
-              <label class="contact-details__label" for="number">Телефон:*</label>
-              <input class="contact-details__input contact-details__input--number" id="number" name="phone-number" type="tel" value="8 (960) 900-60-90">
+              <label class="contact-details__label contact-details__label--number" for="number">Телефон:*</label>
+              <input class="contact-details__input contact-details__input--number" id="number" name="phone-number" type="tel" value="8 (960) 900-60-90" required>
               <svg class="contact-details__icon-phone" width="20" height="20"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
             </li>
           </ul>
@@ -116,20 +119,34 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button-submit" type="submit">Отправить заявку</button>
+        <div class="order-form__wrapper">
+          <button class="button-submit" type="submit">Отправить заявку</button>
+          <p class="order-form__footnote">* — Обязательные поля</p>
+        </div>
       </form>
-      <p class="order-form__footnote">* — Обязательные поля</p>
     </div>
+  </div>
     <div class="address-map">
       <section class="our-address">
         <div class="our-address__wrapper">
           <p class="our-address__invitation">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
-          <p class="our-address__address">ул. Большая Конюшенная, д. 19/8 <span class="our-address__city">Санкт-Петербург</span></p>
+          <div class="our-address__address-wrapper">
+            <p class="our-address__address">ул. Большая Конюшенная, д. 19/8 </p>
+            <p class="our-address__city">Санкт-Петербург</p>
+          </div>
         </div>
       </section>
       <section class="map">
         <div class="map__image-wrapper">
-          <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта с местонахождением нашего офиса">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта с местонахождением нашего офиса">
+          </picture>
         </div>
         <iframe class="map__iframe" style="display: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5942320458557!2d30.32108402186735!3d59.938875024914466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slt!4v1572393932881!5m2!1sru!2slt" width="940" height="447" allowfullscreen=""></iframe>
       </section>

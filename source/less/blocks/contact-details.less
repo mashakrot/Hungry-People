@@ -82,3 +82,133 @@
   margin-left: 247px;
   margin-top: 13px;
 }
+
+
+@media (min-width: @tablet-width) {
+  .contact-details {
+    width: 632px;
+    margin: 0 auto;
+  }
+
+  .contact-details__title {
+    font-size: 36px;
+    margin-top: 81px;
+  }
+
+  .contact-details__title::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background-color: #68b738;
+    left: 0;
+    margin-top: 16px;
+  }
+
+  .contact-details__title::after {
+    margin-left: 43px;
+    margin-top: 16px;
+  }
+
+  .contact-details__list {
+    width: 632px;
+    margin-top: 78px;
+  }
+
+  .contact-details__item {
+    width: 632px;
+    margin-top: 20px;
+    margin-left: 2px;
+  }
+
+  .contact-details__label {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .contact-details__label--number {
+    margin-left: -3px;
+  }
+
+  .contact-details__input {
+    height: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  .contact-details__input--email {
+    width: 529px;
+  }
+
+  .contact-details__icon-email {
+    margin-left: 594px;
+    margin-top: 20px;
+  }
+
+  .contact-details__input--number {
+    width: 515px;
+  }
+
+  .contact-details__icon-phone {
+    margin-left: 594px;
+    margin-top: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-details {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .contact-details__title {
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 75px;
+  }
+
+  .contact-details__title::after {
+    margin-left: 42px;
+  }
+
+  .contact-details__title::before {
+    width: 70px;
+  }
+
+  .contact-details__list {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 58px;
+  }
+
+  .contact-details__item {
+    width: 568px;
+  }
+
+  .contact-details__label--number {
+    margin-left: -4px;
+  }
+
+  .contact-details__input {
+    padding: 0;
+    padding-left: 18px;
+  }
+
+  .contact-details__input--email {
+    width: 466px;
+  }
+
+  .contact-details__input--number {
+    width: 452px;
+  }
+
+  .contact-details__icon-email {
+    margin-left: 531px;
+  }
+
+  .contact-details__icon-phone {
+    margin-left: 529px;
+  }
+}

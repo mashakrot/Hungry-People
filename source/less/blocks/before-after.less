@@ -1,0 +1,185 @@
+.before-after {
+  width: 100%;
+  margin-top: 33px;
+  padding-bottom: 18px;
+}
+
+.before-after__list {
+  padding: 0;
+  margin: 0 auto;
+  width: 198px;
+  font-size: 16px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-left: calc(50% - 97px);
+  margin-top: 13px;
+}
+
+.before-after__image {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  height: 240px;
+}
+
+.before-after__image-after {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .before-after {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .before-after__list {
+    width: 100%;
+    height: 462px;
+    margin: 0;
+    margin-top: 252px;
+  }
+
+  .before-after__item {
+    font-size: 20px;
+    width: 50%;
+    height: 462px;
+    text-align: center;
+  }
+
+  .before-after__item--before {
+    background-color: #f2f2f2;
+  }
+
+  .before-after__item--after {
+    background-color: #eaeaea;
+  }
+
+  .before-after__text {
+    padding: 0;
+    margin: 0;
+    margin-top: 362px;
+    border-bottom: 1px dotted #bebebe;
+    display: inline-block;
+  }
+
+  .before-after__text:hover {
+    border-bottom: 1px solid #989898;
+  }
+
+  .before-after__text:active {
+    border: none;
+  }
+
+  .before-after__text--before {
+    margin-right: 141px;
+  }
+
+  .before-after__text--after {
+    margin-left: 134px;
+  }
+
+  .before-after__image {
+    display: block;
+    position: absolute;
+    width: 690px;
+    height: 517px;
+    /*margin: 0 auto;
+    margin-top: -168px;
+    margin-left: calc(50% - 340px);*/
+  }
+
+  /*.before-after__image-wrapper {
+    width: 768px;
+    height: 517px;
+    position: absolute;
+    display: flex;
+  }*/
+  .before-after__image-after {
+    clip: rect(0, 690px, 517px, 337px);
+  }
+
+  .before-after__image-wrapper-before {
+    height: 517px;
+    width: 340px;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: -168px;
+    margin-left: calc(50% - 340px);
+  }
+
+  .before-after__image-wrapper-after {
+    height: 517px;
+    width: 340px;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: -170px;
+    margin-left: calc(50% - 337px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after {
+    height: 444px;
+    margin-top: -17px;
+  }
+
+  .before-after__list {
+    margin: 0;
+    width: 100%;
+    height: 461px;
+    margin-left: 49px;
+  }
+
+  .before-after__image {
+    margin-left: calc(50% - 585px);
+    margin-top: -191px;
+  }
+
+  .before-after__image-wrapper-after {
+    margin: 0;
+    margin-left: calc(25% + 225px);
+  }
+
+  .before-after__image-wrapper-before {
+    width: 365px;
+    margin: 0;
+    margin-top: -192px;
+    margin-left: calc(25% - 190px);
+  }
+
+  .before-after__image-before {
+    margin: 0;
+  }
+
+  .before-after__image-after {
+    clip: rect(0, 690px, 517px, 365px);
+  }
+
+  .before-after__item {
+    width: 50%;
+    height: 461px;
+  }
+
+  .before-after__text--before {
+    margin-top: 361px;
+    margin-right: 74px;
+  }
+
+  .before-after__text--after {
+    margin-top: 361px;
+    margin-left: 146px;
+  }
+
+  .before-after__item--before {
+    background-color: transparent;
+    width: 500px;
+  }
+
+  .before-after__item--after {
+    background-color: #eaeaea;
+  }
+}

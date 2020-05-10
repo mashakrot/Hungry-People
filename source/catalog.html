@@ -5,10 +5,13 @@
   <meta charset="utf-8">
   <title>Cat Energy каталог</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="body">
+
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
@@ -292,6 +295,89 @@
       </article>
       </div>
     </div>
+    <div class="extra-products">
+      <h2 class="extra-products__title">Дополнительные товары</h2>
+      <div class="extra-products__wrapper">
+        <ul class="extra-products-list">
+          <li class="extra-products-list__item">
+            <div class="extra-products-list__wrapper">
+              <h3 class="extra-products-list__title">Сахарозаменитель</h3>
+              <table class="extra-products-list__table">
+                <tr>
+                  <td>1 упаковка (100 г)</td>
+                  <td class="extra-products-list__info-cell2">200 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="button-order-extra" href="#">Заказать</a>
+          </li>
+          <li class="extra-products-list__item">
+            <div class="extra-products-list__wrapper">
+              <h3 class="extra-products-list__title">Питьевая вода</h3>
+              <table class="extra-products-list__table">
+                <tr>
+                  <td>5 литров</td>
+                  <td class="extra-products-list__info-cell2">50 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="button-order-extra" href="#">Заказать</a>
+          </li>
+          <li class="extra-products-list__item">
+            <div class="extra-products-list__wrapper">
+              <h3 class="extra-products-list__title">Молоко</h3>
+              <table class="extra-products-list__table">
+                <tr>
+                  <td>1 литр</td>
+                  <td class="extra-products-list__info-cell2">100 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="button-order-extra" href="#">Заказать</a>
+          </li>
+          <li class="extra-products-list__item">
+            <div class="extra-products-list__wrapper">
+              <h3 class="extra-products-list__title">Витамины</h3>
+              <table class="extra-products-list__table">
+                <tr>
+                  <td>1 упаковка (30 г)</td>
+                  <td class="extra-products-list__info-cell2">300 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="button-order-extra" href="#">Заказать</a>
+          </li>
+        </ul>
+        <div class="sale">
+          <p class="sale__text">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="address-map">
+    <div class="address-map__wrapper">
+      <section class="our-address">
+        <div class="our-address__wrapper">
+          <p class="our-address__invitation">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
+          <p class="our-address__address">ул. Большая Конюшенная, д. 19/8 <span class="our-address__city">Санкт-Петербург</span></p>
+        </div>
+      </section>
+    </div>
+    <section class="map">
+      <div class="map__image-wrapper">
+        <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&sll=37.622504%2C55.753215&sspn=1.532593%2C0.731116&z=17">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x,">
+            <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта с местонахождением нашего офиса">
+          </picture>
+        </a>
+      </div>
+    </section>
   </div>
   </main>
 

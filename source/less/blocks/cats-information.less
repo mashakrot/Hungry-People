@@ -36,7 +36,6 @@
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
   background-color: transparent;
-  text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
@@ -45,6 +44,7 @@
 
 .cats-information__input::placeholder {
   color: #444444;
+  text-transform: uppercase;
 }
 
 .cats-information__input:hover {
@@ -67,6 +67,10 @@
 .cats-information__input--name {
   width: 229px;
 }
+
+/*.cats-information__input:required:invalid {
+  border: 2px solid #ff8282;
+}*/
 
 @media (min-width: @tablet-width) {
   .cats-information {
@@ -92,21 +96,21 @@
   }
 
   .cats-information__input {
-    height: 50px;
+    height: 52px;
     font-size: 20px;
     padding-left: 18px;
   }
 
   .cats-information__input--age {
-    width: 477px;
+    width: 497px;
   }
 
   .cats-information__input--weight {
-    width: 516px;
+    width: 536px;
   }
 
   .cats-information__input--name {
-    width: 547px;
+    width: 567px;
   }
 }
 
@@ -133,14 +137,14 @@
   }
 
   .cats-information__input--name {
-    width: 486px;
+    width: 506px;
   }
 
   .cats-information__input--weight {
-    width: 455px;
+    width: 475px;
   }
 
   .cats-information__input--age {
-    width: 416px;
+    width: 436px;
   }
 }

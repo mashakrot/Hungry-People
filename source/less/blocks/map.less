@@ -51,18 +51,23 @@
 
 @media (min-width: @desktop-width) {
   .map__image-wrapper {
-    width: 1440px;
+    width: 1300px;
     height: 400px;
+    overflow: hidden;
   }
 
   .map::before {
     margin-top: 154px;
     margin-left: calc(50% + 278px);
+    z-index: 5;
   }
 
   .map__image {
+    position: absolute;
     width: 1440px;
     height: 400px;
     margin-top: 3px;
+    left: 50%;
+    transform: translate(-50%);
   }
 }

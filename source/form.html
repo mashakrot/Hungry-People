@@ -65,7 +65,7 @@
         <fieldset class="program-selection">
           <ul class="program-selection__list">
             <li class="program-selection__item">
-              <input class="visually-hidden" name="options" id="radio-slim" type="radio" value="Похудение">
+              <input class="visually-hidden" name="options" id="radio-slim" type="radio" value="Похудение" checked>
               <label for="radio-slim">Похудение</label>
             </li>
             <li class="program-selection__item">
@@ -96,7 +96,7 @@
         </fieldset>
         <fieldset class="comment">
           <legend class="comment__title">Комментарий</legend>
-          <textarea class="comment__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
+          <textarea class="comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="extra">
           <legend class="extra__title">Дополнительно</legend>
@@ -185,7 +185,8 @@
 
   <script src="js/mobile-nav.js"></script>
   <script src="js/picturefill.min.js"></script>
-
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
 </body>
 
 </html>

@@ -55,18 +55,6 @@
   line-height: 18px;
 }
 
-.options-list__description::before {
-  content: "";
-  position: absolute;
-  width: 240px;
-  height: 1px;
-  margin: auto;
-  background-color: #d9d9d9;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  margin-top: 112px;
-}
-
 .options-list__button {
   display: block;
   color: #111111;
@@ -78,13 +66,25 @@
   margin-bottom: 16px;
 }
 
+.options-list__button::before {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 1px;
+  margin: auto;
+  background-color: #d9d9d9;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-top: -15px;
+}
+
 .options-list__button::after {
   content: "";
   position: absolute;
   width: 23px;
   height: 11px;
   margin: auto;
-  background-image: url("../img/icon-right-arrow-long.svg");
+  background-image: url("../img/right-arrow-long.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   margin-top: 7px;
@@ -93,7 +93,7 @@
 
 .options-list__button:hover::after {
   width: 33px;
-  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-image: url("../img/right-arrow-verylong.svg");
   background-repeat: no-repeat;
 }
 
@@ -139,7 +139,7 @@
     line-height: 24px;
   }
 
-  .options-list__description::before {
+  .options-list__button::before {
     display: none;
   }
 
@@ -163,7 +163,7 @@
     /*height: 372px;*/
     margin: 0 auto;
     flex-direction: row;
-    margin-top: 268px;
+    margin-top: 80px;
   }
 
   .options-list__item {

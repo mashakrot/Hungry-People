@@ -57,10 +57,18 @@
 .extra__item input:checked + label::before {
   content: "";
   position: absolute;
-  background-image: url("../img/icon-tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 4px 5px;
   background-size: 21px 16px;
+}
+
+.extra__item:hover input + label::before {
+  border: 1px solid #bcbcbc;
+}
+
+.extra__item:active {
+  opacity: 0.5;
 }
 
 @media (min-width: @tablet-width) {
@@ -70,6 +78,7 @@
   }
 
   .extra__title {
+    width: 632px;
     font-size: 36px;
     margin-top: 56px;
   }
@@ -132,7 +141,7 @@
   }
 
   .extra__title::before {
-    width: 70px;
+    width: calc(25% - 290px);
   }
 
   .extra__list {

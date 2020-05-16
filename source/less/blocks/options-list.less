@@ -1,7 +1,7 @@
 .options-list {
   margin: 0 auto;
   padding: 0;
-  width: 320px;
+  width: 100%;
   /*height: 552px;*/
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
 }
 
 .options-list__item {
-  width: 280px;
+  width: calc(100% - 40px);
   /*height: 266px;*/
   margin: 0 auto;
   margin-top: 22px;
@@ -48,7 +48,7 @@
   margin: 0;
   font-family: "Arial", sans-serif;
   color: #444444;
-  width: 240px;
+  width: calc(100% - 40px);
   /*height: 110px;*/
   margin-left: 20px;
   margin-top: 31px;
@@ -69,7 +69,7 @@
 .options-list__button::before {
   content: "";
   position: absolute;
-  width: 240px;
+  width: calc(100% - 80px);
   height: 1px;
   margin: auto;
   background-color: #d9d9d9;
@@ -106,12 +106,12 @@
   .options-list {
     margin: 0 auto;
     /*height: 774px;*/
-    width: 708px;
+    width: 100%;
     margin-top: -28px;
   }
 
   .options-list__item {
-    width: 708px;
+    width: calc(100% - 60px);
     /*height: 372px;*/
     margin: 0 auto;
     margin-top: 30px;
@@ -120,8 +120,8 @@
   .options-list__item::before {
     width: 200px;
     height: 200px;
-    margin-left: 446px;
     margin-top: 92px;
+    margin-left: calc(100% - 321px);
   }
 
   .options-list__title {
@@ -159,7 +159,7 @@
 
 @media (min-width: @desktop-width) {
   .options-list {
-    width: 1220px;
+    width: calc(100% - 80px);
     /*height: 372px;*/
     margin: 0 auto;
     flex-direction: row;
@@ -167,8 +167,8 @@
   }
 
   .options-list__item {
-    width: 570px;
-    height: 372px;
+    width: calc(50% - 40px);
+    /*height: 372px;*/
     margin: 0;
   }
 
@@ -184,7 +184,8 @@
   }
 
   .options-list__description {
-    width: 465px;
+    width: calc(100% - 105px);
+    margin: 0 auto;
     margin-top: 64px;
   }
 

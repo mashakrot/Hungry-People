@@ -18,19 +18,27 @@
     padding: 0;
     margin: 0 auto;
     display: flex;
-    width: 708px;
+    width: calc(100% - 60px);
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 9px;
+  }
+
+  .products-list__product-card-wrapper {
+    width: calc(50% - 31px);
   }
 }
 
 @media (min-width: @desktop-width) {
   .products-list {
-    width: 1220px;
+    width: calc(100% - 80px);
     margin: 0 auto;
-    margin-top: 12px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .products-list__product-card-wrapper {
+    width: calc(25% - 60px);
   }
 }

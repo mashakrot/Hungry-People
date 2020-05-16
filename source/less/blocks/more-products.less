@@ -1,5 +1,5 @@
 .more-products {
-  width: 318px;
+  width: calc(100% - 2px);
   margin: 0 auto;
   border: 1px solid #ededed;
 }
@@ -11,7 +11,7 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 76px;
+  margin-top: 78px;
   color: #111111;
 }
 
@@ -35,15 +35,15 @@
   text-align: center;
   color: #444444;
   font-size: 12px;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .more-products__button-all {
   display: block;
-  width: 280px;
+  width: calc(100% - 40px);
   color: #444444;
   margin: 0 auto;
-  margin-top: 22px;
+  margin-top: 23px;
   padding: 0;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -51,7 +51,7 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   background-color: #f2f2f2;
 }
 
@@ -66,7 +66,7 @@
 
 @media (min-width: @tablet-width) {
   .more-products {
-    width: 323px;
+    width: 100%;
     margin-top: 141px;
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
-    margin-top: 163px;
+    margin-top: 164px;
   }
 
   .more-products__header::before {
@@ -100,10 +100,10 @@
   .more-products__button-all {
     margin: 0 auto;
     padding: 0;
-    width: 249px;
+    width: calc(100% - 74px);
     /*height: 40px;*/
     font-size: 16px;
-    margin-top: 84px;
+    margin-top: 87px;
     padding-top: 7px;
     padding-bottom: 7px;
     margin-bottom: 40px;
@@ -115,13 +115,13 @@
     font-size: 16px;
     width: 180px;
     height: auto;
-    margin-top: 24px;
+    margin-top: 26px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .more-products {
-    width: 243px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 141px;
   }
@@ -132,13 +132,14 @@
 
   .more-products__text {
     line-height: 19px;
+    margin-top: 24px;
   }
 
   .more-products__button-all {
-    width: 169px;
+    width: calc(100% - 76px);
     /*height: 40px;*/
     margin: 0 auto;
-    margin-top: 84px;
-    margin-bottom: 39px;
+    margin-top: 86px;
+    margin-bottom: 40px;
   }
 }

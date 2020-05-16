@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0 auto;
   border: none;
-  width: 280px;
+  width: 100%;
   margin-bottom: 22px;
 }
 
@@ -10,31 +10,42 @@
   margin: 0 auto;
   padding: 0;
   font-size: 24px;
+  font-weight: 400;
 }
 
 .comment__title::after {
   content: "";
   position: absolute;
   height: 3px;
-  width: 100%;
   background-color: #68b738;
-  margin-left: 22px;
-  margin-top: 20px;
+  left: 0;
+  width: 100vw;
+  margin-top: 21px;
+  z-index: -1;
+}
+
+.comment__title-span {
+  display: inline-block;
+  background-color: #fff;
+  max-width: 142px;
+  padding-left: 20px;
+  padding-right: 22px;
 }
 
 .comment__textarea {
   padding: 0;
-  margin: 0;
-  width: 264px;
-  height: 140px;
+  margin: 0 auto;
+  width: calc(100% - 56px);
+  height: 139px;
   border: 1px solid #e6e6e6;
   margin-top: 29px;
+  margin-left: 20px;
   background-color: transparent;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   color: #444444;
-  padding-top: 8px;
+  padding-top: 9px;
   padding-left: 14px;
   resize: none;
 }
@@ -50,36 +61,33 @@
 
 @media (min-width: @tablet-width) {
   .comment {
-    width: 632px;
+    width: 100%;
     margin: 0 auto;
   }
 
   .comment__title {
     font-size: 36px;
-    width: 632px;
+    width: calc(100% - 60px);
     margin: 0 auto;
     margin-top: 56px;
   }
 
-  .comment__title::before {
-    content: "";
-    position: absolute;
-    height: 3px;
-    width: 30px;
-    background-color: #68b738;
-    left: 0;
-    margin-top: 31px;
+  .comment__title-span {
+    max-width: none;
+    padding-left: 39px;
+    padding-right: 40px;
   }
 
   .comment__title::after {
-    margin-left: 40px;
     margin-top: 31px;
   }
 
   .comment__textarea {
-    width: 611px;
+    width: calc(100% - 158px);
     height: 163px;
+    margin: 0 auto;
     margin-top: 67px;
+    margin-left: 70px;
     font-size: 20px;
     padding-left: 19px;
     padding-top: 9px;
@@ -92,12 +100,12 @@
 
 @media (min-width: @desktop-width) {
   .comment {
-    width: 1220px;
+    width: 100%;
     margin: 0 auto;
   }
 
   .comment__title {
-    width: 1220px;
+    width: 1300px;
     margin: 0 auto;
     margin-top: 58px;
   }
@@ -107,7 +115,10 @@
   }
 
   .comment__textarea {
-    width: 1200px;
+    margin: 0 auto;
+    margin-left: 40px;
+    width: calc(100% - 100px);
     padding-left: 18px;
+    margin-top: 68px;
   }
 }

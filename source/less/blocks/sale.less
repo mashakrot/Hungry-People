@@ -1,10 +1,10 @@
 .sale {
   margin: 0 auto;
-  width: 280px;
+  width: calc(100% - 40px);
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-color: #64a83b;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
   margin-top: 39px;
   margin-bottom: 35px;
 }
@@ -21,8 +21,9 @@
   font-family: "Arial", sans-serif;
   text-align: center;
   color: #ffffff;
-  padding-top: 186px;
-  padding-bottom: 43px;
+  padding-top: 187px;
+  padding-bottom: 42px;
+  line-height: 20px;
 }
 
 .sale__text::before {
@@ -37,11 +38,11 @@
 
 @media (min-width: @tablet-width) {
   .sale {
-    width: 708px;
+    width: calc(100% - 60px);
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-color: #64a83b;
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: center;
     margin: 0 auto;
     margin-top: 69px;
     margin-bottom: 76px;
@@ -55,9 +56,9 @@
     padding: 0;
     margin: 0;
     text-align: left;
-    padding-left: 423px;
-    padding-top: 71px;
+    padding-top: 72px;
     padding-bottom: 69px;
+    padding-left: calc(50% + 69px);
   }
 
   .sale__text::before {

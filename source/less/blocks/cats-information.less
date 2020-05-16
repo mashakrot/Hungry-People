@@ -1,5 +1,5 @@
 .cats-information {
-  width: 280px;
+  width: calc(100% - 40px);
   padding: 0;
   margin: 0 auto;
   border: none;
@@ -14,7 +14,7 @@
 }
 
 .cats-information__item {
-  width: 280px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 14px;
@@ -25,7 +25,7 @@
   text-transform: uppercase;
   font-weight: 400;
   color: #111111;
-  margin-top: 9px;
+  margin-top: 10px;
 }
 
 .cats-information__input {
@@ -57,15 +57,15 @@
 
 
 .cats-information__input--age {
-  width: 172px;
+  width: calc(100% - 108px);
 }
 
 .cats-information__input--weight {
-  width: 204px;
+  width: calc(100% - 76px);
 }
 
 .cats-information__input--name {
-  width: 229px;
+  width: calc(100% - 51px);
 }
 
 /*.cats-information__input:required:invalid {
@@ -74,7 +74,8 @@
 
 @media (min-width: @tablet-width) {
   .cats-information {
-    width: 630px;
+    /*width: 630px;*/
+    width: calc(100% - 136px);
     margin: 0 auto;
     margin-bottom: 49px;
   }
@@ -84,7 +85,7 @@
   }
 
   .cats-information__item {
-    width: 632px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 20px;
   }
@@ -116,7 +117,7 @@
 
 @media (min-width: @desktop-width) {
   .cats-information {
-    width: 570px;
+    width: calc(50% - 80px);
     margin: 0;
     padding: 0;
   }

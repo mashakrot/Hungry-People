@@ -80,7 +80,9 @@
         </fieldset>
         </div>
         <fieldset class="contact-details">
-          <legend class="contact-details__title">Контактные данные (владельца кота)</legend>
+          <h2 class="contact-details__title">
+            <span class="contact-details__title-span">Контактные данные (владельца кота)</span>
+          </h2>
           <ul class="contact-details__list">
             <li class="contact-details__item">
               <label class="contact-details__label" for="owner-email">E-mail:*</label>
@@ -95,11 +97,15 @@
           </ul>
         </fieldset>
         <fieldset class="comment">
-          <legend class="comment__title">Комментарий</legend>
+          <h2 class="comment__title">
+            <span class="comment__title-span">Комментарий</span>
+          </h2>
           <textarea class="comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="extra">
-          <legend class="extra__title">Дополнительно</legend>
+          <h2 class="extra__title">
+            <span class="extra__title-span">Дополнительно</span>
+          </h2>
           <ul class="extra__list">
             <li class="extra__item">
               <input class="visually-hidden" id="sweetener" name="extra-sweetener" type="checkbox" checked>
@@ -137,17 +143,19 @@
       </div>
       <section class="map">
         <div class="map__image-wrapper">
-          <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&sll=37.622504%2C55.753215&sspn=1.532593%2C0.731116&z=17">
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+          <p class="map__image-container">
+            <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&sll=37.622504%2C55.753215&sspn=1.532593%2C0.731116&z=17">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-              <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта с местонахождением нашего офиса">
-            </picture>
-          </a>
+                <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+                <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта с местонахождением нашего офиса">
+              </picture>
+            </a>
+          </p>
         </div>
       </section>
     </div>

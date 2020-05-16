@@ -1,6 +1,6 @@
 .button-order {
   display: block;
-  width: 280px;
+  width: calc(100% - 40px);
   margin: 0 auto;
   padding: 0;
   color: #ffffff;
@@ -9,9 +9,9 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
-  margin-bottom: 25px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  margin-bottom: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .button-order:hover {
@@ -25,16 +25,16 @@
 
 @media (min-width: @tablet-width) {
   .button-order {
-    width: 249px;
+    width: calc(100% - 74px);
     /*height: 40px;*/
-    margin-top: 46px;
-    margin-bottom: 39px;
+    margin-top: 44px;
+    margin-bottom: 38px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .button-order {
-    width: 169px;
+    width: calc(100% - 76px);
     margin-bottom: 40px;
   }
 }

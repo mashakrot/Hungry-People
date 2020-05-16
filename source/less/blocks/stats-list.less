@@ -2,8 +2,8 @@
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  width: 280px;
-  margin-top: 32px;
+  width: calc(100% - 40px);
+  margin-top: 34px;
 }
 
 .stats-list__item {
@@ -91,7 +91,7 @@
 
 @media (min-width: @tablet-width) {
   .stats-list {
-    width: 708px;
+    width: calc(100% - 60px);
     /*height: 632px;*/
     margin: 0 auto;
     display: flex;
@@ -106,7 +106,7 @@
     font-size: 16px;
     margin: 0;
     margin-top: 112px;
-    margin-bottom: 103px;
+    margin-bottom: 101px;
     line-height: 24px;
   }
 
@@ -115,7 +115,7 @@
     /*height: 287px;*/
     margin: 0;
     padding: 0;
-    margin-top: 31px;
+    margin-top: 33px;
   }
 
   .stats-list__item::before {
@@ -200,7 +200,7 @@
 
 @media (min-width: @desktop-width) {
   .stats-list {
-    width: 1220px;
+    width: calc(100% - 80px);
   }
 
   .stats-list__item {

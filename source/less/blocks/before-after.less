@@ -7,14 +7,13 @@
 .before-after__list {
   padding: 0;
   margin: 0 auto;
-  width: 198px;
+  width: calc(100% - 122px);
   font-size: 16px;
   list-style: none;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  margin-left: calc(50% - 97px);
-  margin-top: 13px;
+  margin-top: 15px;
 }
 
 .before-after__image {
@@ -107,7 +106,7 @@
     position: absolute;
     margin: 0 auto;
     overflow: hidden;
-    margin-top: -168px;
+    margin-top: -170px;
     margin-left: calc(50% - 340px);
   }
 
@@ -133,6 +132,7 @@
 @media (min-width: @desktop-width) {
   .before-after {
     height: 444px;
+    width: calc(50% + 40px);
     margin-top: -17px;
   }
 
@@ -140,7 +140,6 @@
     margin: 0;
     width: 100%;
     height: 461px;
-    margin-left: 49px;
   }
 
   .before-after__image {
@@ -150,14 +149,13 @@
 
   .before-after__image-wrapper-after {
     margin: 0;
-    margin-left: calc(25% + 225px);
+    margin-left: 415px;
   }
 
   .before-after__image-wrapper-before {
     width: 365px;
     margin: 0;
     margin-top: -192px;
-    margin-left: calc(25% - 190px);
   }
 
   .before-after__image-before {
@@ -181,23 +179,13 @@
     border: none;
   }
 
-
   .before-after__text--before {
-    margin-top: 361px;
-    margin-right: 74px;
+    margin-top: 363px;
+    margin-right: 139px;
   }
 
   .before-after__text--after {
-    margin-top: 361px;
-    margin-left: 146px;
-  }
-
-  .before-after__item--before {
-    background-color: transparent;
-    width: 500px;
-  }
-
-  .before-after__item--after {
-    background-color: #eaeaea;
+    margin-top: 363px;
+    margin-left: 214px;
   }
 }

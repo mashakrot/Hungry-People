@@ -1,5 +1,5 @@
 .navigation {
-  width: 320px;
+  width: 100%;
   /*height: 65px;*/
   margin: 0 auto;
   background: #ffffff;
@@ -33,7 +33,7 @@
 }
 
 .navigation__wrapper {
-  width: 320px;
+  width: 100%;
   height: 66px;
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,7 @@
 @media (min-width: @tablet-width) {
   .navigation {
     /*height: 82px;*/
-    width: 768px;
+    width: 100%;
     background-color: transparent;
     border: none;
   }
@@ -60,7 +60,7 @@
 
 @media (min-width: @desktop-width) {
   .navigation {
-    width: 1220px;
+    width: calc(100% - 80px);
     height: 113px;
     margin: 0 auto;
   }

@@ -93,21 +93,23 @@
   height: 13px;
   right: 33px;
   margin-top: 16px;
-}
-
-.contact-details__input:invalid:empty + .contact-details__icon-email {
   fill: #000000;
 }
 
-.contact-details__input:invalid:focus + .contact-details__icon-email {
+.contact-details__input:focus + .contact-details__icon-email {
   fill: #68b738;
 }
 
-.contact-details__input:valid:focus + .contact-details__icon-email {
-  fill: #68b738;
+/*Модификатор для не валидного состояния полей ввода*/
+.contact-details__input--invalid {
+  border: 2px solid #ff8282;
 }
 
-.contact-details__input:invalid + .contact-details__icon-email {
+.contact-details__input--invalid + .contact-details__icon-email {
+  fill: #ff8282;
+}
+
+.contact-details__input--invalid + .contact-details__icon-phone {
   fill: #ff8282;
 }
 
@@ -121,22 +123,11 @@
   height: 20px;
   right: 36px;
   margin-top: 13px;
-}
-
-.contact-details__input:invalid:empty + .contact-details__icon-phone {
   fill: #000000;
 }
 
-.contact-details__input:invalid:focus + .contact-details__icon-phone {
+.contact-details__input:focus + .contact-details__icon-phone {
   fill: #68b738;
-}
-
-.contact-details__input:valid:focus + .contact-details__icon-phone {
-  fill: #68b738;
-}
-
-.contact-details__input:invalid:not(:empty) + .contact-details__icon-phone {
-  fill: #ff8282;
 }
 
 @media (min-width: @tablet-width) {

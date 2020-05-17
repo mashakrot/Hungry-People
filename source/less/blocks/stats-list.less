@@ -7,11 +7,11 @@
 }
 
 .stats-list__item {
-  width: 200px;
+  min-height: 80px;
+  width: calc(100% - 80px);
   font-size: 14px;
   font-family: "Arial", sans-serif;
   color: #444444;
-  padding-bottom: 26px;
   padding-left: 80px;
   line-height: 18px;
 }
@@ -111,7 +111,7 @@
   }
 
   .stats-list__item {
-    width: 324px;
+    width: calc(50% - 30px);
     /*height: 287px;*/
     margin: 0;
     padding: 0;
@@ -200,7 +200,7 @@
 
 @media (min-width: @desktop-width) {
   .stats-list {
-    width: calc(100% - 80px);
+    width: 1220px;
   }
 
   .stats-list__item {

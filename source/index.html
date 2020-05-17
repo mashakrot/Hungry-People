@@ -62,13 +62,13 @@
         <p class="options-list__description">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
         </p>
-        <a href="#" class="options-list__button">Каталог slim</a>
+        <a href="slim.html" class="options-list__button">Каталог slim</a>
       </li>
       <li class="options-list__item pro">
         <h3 class="options-list__title pro__title">Набор массы</h3>
         <p class="options-list__description pro__description">Заработать авторитет среди дворовых котов и даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a href="#" class="options-list__button">Каталог pro</a>
+        <a href="pro.html" class="options-list__button">Каталог pro</a>
       </li>
     </ul>
     <div class="stats">
@@ -91,6 +91,7 @@
     <div class="example">
       <h2 class="example__title">Живой пример</h2>
       <div class="example__background-wrapper">
+        <div class="example__content-wrapper">
           <div class="example__description-wrapper">
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
             <div class="example__list-wrapper">
@@ -131,10 +132,10 @@
               </picture>
             </div>
             <ul class="before-after__list">
-              <li class="before-after__item">
+              <li class="before-after__item before-after__item--before">
                   <p class="before-after__text before-after__text--before">Было</p>
               </li>
-              <li class="before-after__item">
+              <li class="before-after__item before-after__item--after">
                 <p class="before-after__text before-after__text--after">Стало</p>
               </li>
             </ul>
@@ -142,6 +143,7 @@
               <div class="scale__toggle"><div class="scale__toggle-green"></div></div>
             </div>
           </section>
+        </div>
       </div>
     </div>
     <div class="address-map">
@@ -156,18 +158,17 @@
       <section class="map">
         <div class="map__image-wrapper">
           <p class="map__image-container">
-            <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323117%2C59.938635&sll=37.622504%2C55.753215&sspn=1.532593%2C0.731116&z=17">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-                <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта с местонахождением нашего офиса">
-              </picture>
-            </a>
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта с местонахождением нашего офиса">
+            </picture>
           </p>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5942320458557!2d30.32108402186735!3d59.938875024914466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slt!4v1572393932881!5m2!1sru!2slt" width="320" height="400" allowfullscreen=""></iframe>
         </div>
       </section>
     </div>
@@ -195,7 +196,7 @@
       <div class="page-footer__copyright">
         <a class="page-footer__copyright-name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="page-footer__copyright-icon" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="page-footer__copyright-icon-svg"  width="27" height="34"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg>
+          <svg class="page-footer__copyright-icon-svg"  width="27" height="34" fill="#666666"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg>
         </a>
       </div>
     </div>

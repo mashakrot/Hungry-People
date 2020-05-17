@@ -33,8 +33,18 @@
 }
 
 .map__image-wrapper {
+  width: 100%;
   margin: 0 auto;
   background-color: #f7f7f7;
+  position: relative;
+}
+
+.map__iframe {
+  position: absolute;
+  height: 362px;
+  width: 100%;
+  bottom: 0;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -53,6 +63,10 @@
   .map__image {
     width: 767px;
     height: 400px;
+  }
+
+  .map__iframe {
+    height: 396px;
   }
 }
 
@@ -83,5 +97,10 @@
     position: absolute;
     width: 1440px;
     height: 400px;
+  }
+
+  .map__iframe {
+    height: 400px;
+    z-index: 100;
   }
 }

@@ -19,7 +19,7 @@
   display: block;
 }
 
-.navigation--closed .navigation-button {
+.navigation-button {
   width: 24px;
   height: 18px;
   margin-right: 20px;
@@ -30,6 +30,10 @@
 
 .navigation--nojs .navigation-button {
   display: none;
+}
+
+.navigation--nojs .navigation-list {
+  display: block;
 }
 
 .navigation__wrapper {
@@ -48,6 +52,10 @@
   }
 
   .navigation--opened .navigation-list {
+    display: flex;
+  }
+
+  .navigation--nojs .navigation-list {
     display: flex;
   }
 

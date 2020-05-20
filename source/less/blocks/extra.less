@@ -78,8 +78,16 @@
   border: 1px solid #bcbcbc;
 }
 
+.extra__item input:focus + label::before {
+  border: 1.5px solid #444444;
+}
+
 .extra__item:active {
   opacity: 0.5;
+}
+
+.extra__item:disabled {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -121,7 +129,7 @@
 
   .extra__item {
     /*width: 229px;*/
-    width: 40%;
+    width: 36%;
     font-size: 20px;
     margin: 0;
     margin-top: 53px;

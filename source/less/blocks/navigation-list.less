@@ -42,11 +42,11 @@
   .navigation-list {
     visibility: visible;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     background-color: transparent;
     flex-wrap: wrap;
-    width: 440px;
+    width: auto;
     /*height: 58px;*/
     border: none;
     margin-top: -22px;
@@ -58,6 +58,7 @@
     border: none;
     font-size: 18px;
     margin-top: 20px;
+    padding-left: 36px;
   }
 
   .navigation-list__link {
@@ -75,12 +76,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  .navigation-list {
-    width: 478px;
-  }
-
   .navigation-list__item {
     font-size: 20px;
+    padding-left: 34px;
   }
 
   .navigation-list__link {

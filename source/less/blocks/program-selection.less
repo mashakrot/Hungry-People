@@ -65,8 +65,12 @@
   */
 }
 
-.program-selection__item:disabled {
-  opacity: 0.3;
+.program-selection__item input:disabled + label::before {
+  opacity: 0.7;
+}
+
+.program-selection__item input:disabled + label {
+  opacity: 0.4;
 }
 
 @media (min-width: @tablet-width) {

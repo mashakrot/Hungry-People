@@ -1,0 +1,40 @@
+.section-team {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background-image: url("../../img/our-team-bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.section-team::before,
+.section-team::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 675px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.section-team::before {
+  margin-left: 294px;
+}
+
+.section-team::after {
+  margin-left: calc(100% - 297px);
+  margin-top: -675px;
+}
+
+.section-team__text {
+  padding: 0;
+  margin: 0;
+  padding-top: 42px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+

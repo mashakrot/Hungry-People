@@ -45,7 +45,7 @@ gulp.task("css", function() {
   .pipe(sourcemap.write("."))
   .pipe(gulp.dest("build/css"))
   .pipe(server.stream());
-})
+});
 
 gulp.task("images", function() {
   return gulp.src("source/img/**/*.{png,jpg,svg}")

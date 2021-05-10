@@ -1,0 +1,77 @@
+.section-about-us {
+  display: flex;
+  // width: 100%;
+  width: calc(100% - 193px);
+  padding: 0;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.section-about-us__info {
+  width: 50%;
+  padding-top: 215px;
+}
+
+.section-about-us__bold-text {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.section-about-us__normal-text {
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  padding-top: 18px;
+  // padding-left: 14px;
+}
+
+.section-about-us__info h2 {
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Banny";
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-about-us__info h2::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  background: #e8c300;
+  border-radius: 50px;
+  margin-top: 58px;
+  left: calc(25% + 18px);
+}
+
+.section-about-us__img {
+  width: 575px;
+  height: 575px;
+  margin-top: 50px;
+  margin-left: -10px;
+}
+
+.section-about-us__img::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 20px solid #E8C300;box-sizing: border-box;
+  filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+  margin-top: 163px;
+  margin-left: 400px;
+}

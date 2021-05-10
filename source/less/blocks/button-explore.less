@@ -1,0 +1,34 @@
+.button-explore {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 86px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../../img/buttton-explore-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 16px;
+  cursor: pointer;
+}
+
+.button-explore::before {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin-top: -30px;
+  margin-left: -31px;
+}
+
+.button-explore:hover {
+  background-color: #f5f5f5;
+}
+
+.button-explore:active {
+  background-image: url("../../img/buttton-explore-icon-active.svg");
+}
